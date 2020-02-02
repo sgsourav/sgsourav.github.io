@@ -1,0 +1,540 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>PGDBA | cds2016</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head> 
+
+<body class="subpage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <header id="header" class="container">
+                <div class="row">
+                    <div class="12u">
+
+                        <!-- Logo -->
+                        <h1><a href="index.html" id="logo">This is CDS 2016.</a></h1>
+
+                        <!-- Nav -->
+                        <nav id="nav">
+                            <a href="index.html"><span class="fa fa-home"></span> &nbsp; Home</a>
+                            <a href="#information"><span class="fa fa-info-circle"></span> &nbsp; Information</a>
+                            <a href="#lectures"><span class="fa fa-calendar"></span> &nbsp; Lectures</a>
+                            <a href="resources.html"><span class="fa fa-book"></span> &nbsp; Resources</a>
+                            <a href="#assignments"><span class="fa fa-pencil"></span> &nbsp; Assignments</a>
+                            <a href="#projects"><span class="fa fa-gears"></span> &nbsp; Projects</a>
+                        </nav>
+
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Content -->
+        <div id="content-wrapper">
+            <div id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="9u 12u(mobile)">
+
+                            <!-- Main Content -->
+
+                            <section>
+                                <header>
+                                    <h2>Computing for Data Sciences</h2>
+                                    <h3>Welcome to the Fall 2016 edition of the course</h3>
+                                </header>
+                                <p>
+                                    <span class="fa fa-quote-left fa-2x fa-pull-left"></span>
+                                    <emph>The <a href="http://www.iitkgp.ac.in/pgdba/">Post Graduate Diploma in Business Analytics (PGDBA)</a> - jointly offered by IIM Calcutta, IIT Kharagpur, and ISI Kolkata - aims to help shape the emerging profession of Business Analytics by delivering a cutting edge inter-disciplinary educational experience to its graduates.</emph>
+                                </p>
+                                <p>
+                                    Computing for Data Sciences (CDS), aka BAISI-4, is one of the five courses offered at ISI Kolkata during the First Semester of the PGDBA program. The Fall 2016 edition of the course -- CDS 2016 -- is taught by
+                                    <a href="http://www.souravsengupta.com/">Sourav Sen Gupta</a> from R C Bose Centre, Indian Statistical Institute, Kolkata.</p>
+
+                                <hr />
+
+                                <p class="smallscript" align="right">
+                                    Reach Sourav &nbsp; : &nbsp; <span class="fa fa-envelope-o"></span> &nbsp; sg.sourav@gmail.com &nbsp; | &nbsp; <span class="fa fa-phone"></span> &nbsp; +91 94323 44852 &nbsp; | &nbsp; <span class="fa fa-building-o"></span> &nbsp; Room 404, Deshmukh Building
+                                </p>
+
+                            </section>
+
+                            <section>
+                                <header>
+                                    <h2><span class="fa fa-calendar"></span> &nbsp;
+                                        <a class="anchor" id="lectures">Lectures</a></h2>
+                                </header>
+
+                                <p>
+                                    We have time for about 28 two-hour lectures during Fall 2016 -- that's a whopping 56 hours! We will try to distribute this time carefully between Classroom Lectures (about 36-40 hours), Invited Talks (about 8 hours), and Interactive Sessions (about 8-12 hours) -- as required for the course.
+                                </p>
+                                <p>
+                                    The basic outline of the Classroom Lectures, and all relevant references and resources will be posted regularly on this website. The corresponding lecture notes will be authored and posted by the students taking the course -- in the form of blog articles -- at the <a href="http://courses.souravsengupta.com/category/cds2016/">CDS 2016 Lecture Notes</a> blog.
+                                </p>
+
+                                <h3>First Half (Pre Mid-Sem) : 12 Lectures</h3>
+
+                                <button class="accordion">
+                                    Lecture 01 &nbsp; | &nbsp; 4 August 2016
+                                    <span class="topic">Intro to CDS and Preliminaries of Computational Complexity</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        We discussed the format for the course, and the administrative issues thereof. Format for the groups were specified for assignments and the term-project, and the resources residing on the CDS website were pointed out. The computing platform and requirements for the course was defined as well, and installation of <def>R</def> (<a href="https://www.r-project.org/">link</a>), <def>RStudio</def> (<a href="https://www.rstudio.com/">link</a>) and <def>Python 2.7.x</def> (<a href="https://www.python.org/">link</a>) was recommended.
+                                    </p>
+                                    <p>
+                                        We discussed the primary goal of the course -- to understand the fundamental notions of <def>Regression</def>, <def>Classification</def> and <def>Clustering</def> on big-data -- with support from techniques like <def>dimensionality reduction</def>. The role of efficient algorithm design was mentioned in this regard, and we started basic discussion on <def>time complexity</def> of an algorithm in terms of different classes of functions and their mutual comparison. Preliminary notions of $\theta$, $O$, $\Omega$, $o$ and $\omega$ in terms of <def>complexity</def> were informally introduced as analogues to 'equality' ($=$), 'less than or equal to' ($\leq$), 'greater than or equal to' ($\geq$), 'strictly less than' ($<$) and 'strictly greater than' ($>$), respectively, in terms of such functions.
+                                    </p>
+                                    <p>
+                                        <strong><span class="fa fa-puzzle-piece"></span> &nbsp; Homework :</strong> Plot $f(n)$ against $n$ for various functions $1, 2, 1000$; $\log(n), 2\log(n), 1000\log(n)$; $n, 2n, 1000n$; $n^2, 2n^2, 1000n^2$; $n^3, 2n^3, 1000n^3$; $2^n, 3^n$; etc., and try to observe patterns of clustering, if any, for large values of $n$.
+                                    </p>
+
+                                    <p class="smallscript" align="right">
+                                        <span class="fa fa-file-pdf-o"></span> &nbsp; <a href="lectures/Intro_to_CDS.pdf">Lecture Slides</a> &nbsp; | &nbsp; <span class="fa fa-youtube"></span> &nbsp; <a href="https://www.youtube.com/playlist?list=PL5-da3qGB5ICcUhueCyu25slvsGp8IDTa">Intro to Statistical Learning (ISLR)</a>
+                                    </p>
+                                </div>
+
+                                <button class="accordion">
+                                    Lecture 02 &nbsp; | &nbsp; 9 August 2016
+                                    <span class="topic">Preliminaries of Computational Complexity</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        We continued our discussion on the basic notions of <def>computational complexity</def> by classifying $f(n)$, the function denoting the time complexity of an algorithm with input size $n$, in various categories -- <def>constant</def> or $O(1)$; <def>logarithmic</def> or $O(\log(n))$; <def>linear</def> or $O(n)$; <def>linearathmic</def> or $O(n\log(n))$; <def>quadratic</def> or $O(n^2)$; <def>polynomial</def> or $O(n^c)$; <def>exponential</def> or $O(c^n)$; <def>factorial</def> or $O(n!)$.
+                                    </p> 
+                                    <p>
+                                        We took a few examples -- addition and multiplication of two numbers (where $n$ is the maximum bitsize of the input numbers), finding the maximum or minimum in a list of numbers (where $n$ is the size of the list), sorting a bunch of playing cards (where $n$ is the number of cards), multiplication of a matrix to a vector (where $m \times n$ are the dimensions of the matrix) -- to illustrate various time complexities.
+                                    </p>
+
+                                    <p>
+                                        <strong><span class="fa fa-bookmark"></span> &nbsp; Reading :</strong> 
+                                        Chapter 3 of "Introduction to Algorithms" (by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein)
+                                    </p>
+
+                                    <p class="smallscript" align="right">
+                                        <span class="fa fa-youtube"></span> &nbsp; <a href="https://youtu.be/IM9sHGlYV5A">Computational Complexity (CS50)</a> &nbsp; | &nbsp; <span class="fa fa-youtube"></span> &nbsp; <a href="https://youtu.be/iOq5kSKqeR4">Asymptotic Notation (CS50)</a> &nbsp; | &nbsp; <span class="fa fa-file-pdf-o"></span> &nbsp; <a href="lectures/Complexity_Cheatsheet.pdf">Complexity Cheatsheet</a>
+                                    </p>
+                                </div>
+
+                                <button class="accordion">
+                                    Lecture 03 &nbsp; | &nbsp; 9 August 2016
+                                    <span class="topic">Preliminaries of Matrices and Vectors</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        We motivated the <def>vector-space modelling</def> of data, taking the classic example of representing books as term-frequency vectors on a high-dimensional space, where each term/word represents a new dimension and the values are frequencies of those terms/words in the book. In this context, we learned the notion of distance -- in the sense of <def>norm</def> -- and discussed the three major norms, namely, $l_1$, $l_2$ and $l_{\infty}$.
+                                    </p>
+                                    <p>
+                                        We tried to analyze the action of a matrix on a vector during multiplication, and figured that an $m \times n$ matrix defined over the reals ($\mathbb{R}$) generally <def>rotates</def>, <def>scales</def> or <def>reflects</def> a vector. We discussed the effect of scaling in terms of the growth of Fibonacci numbers by writing the recurrence relation $F_n = F_{n-1} + F_{n-2}$ in terms of a matrix, and figured that the <def>eigenvalues</def> of this matrix control the scaling.
+                                    </p>
+                                    <p>
+                                        In fact, we observed that if we decompose a square matrix into its <def>eigenvalues</def> and <def>eigenvectors</def> using the <strong>eigen()</strong> function in R, then the original matrix can be written as $M = V \Lambda V^{-1}$, where $V$ is the matrix with the eigenvectors of $M$ as its columns, and $\Lambda$ is a diagonal matrix with the eigenvalues of $M$ as its diagonal elements. This gave us the nice relation $M^kv = (V \Lambda^k V^{-1}) v$ for any vector $v$.
+                                    </p>
+                                    <p>
+                                        We noted that the action of $M$ on a vector $v$ can be naturally decomposed as $Mv = (V \Lambda V^{-1}) v$, which is a three-step process where $V^{-1}$ and $V$ take care of two steps of rotation (being orthonormal matrices), and $\Lambda$ takes care of the entire scaling. We hinted that such a decomposition is possible for any $m \times n$ matrix; it is called the <def>Singular Value Decomposition</def>, computed using the <strong>svd()</strong> function in R.
+                                    </p>
+
+                                    <p>
+                                        <strong><span class="fa fa-bookmark"></span> &nbsp; Reading :</strong> 
+                                        Lectures 1, 2, 3 of "Linear Algebra" by Gilbert Strang (<a href="http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/">link</a>) &nbsp; | &nbsp; "Geometric Review of Linear Algebra" by Simoncelli (<a href="lectures/Simoncelli_Notes.pdf">link</a>)
+                                    </p>
+
+                                    <p class="smallscript" align="right">
+                                        <span class="fa fa-youtube"></span> &nbsp; <a href="http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/">Linear Algebra (Gilbert Strang)</a> &nbsp; | &nbsp; <span class="fa fa-file-pdf-o"></span> &nbsp; <a href="lectures/Fibonacci_Anstee.pdf">Fibonacci and Eigenvalues (Anstee)</a> &nbsp; | &nbsp; <span class="fa fa-file-pdf-o"></span> &nbsp; <a href="lectures/Savov_Notes.pdf">Linear Algebra Review (Savov)</a>
+                                    </p>
+                                </div>
+
+                                <button class="accordion">
+                                    Lecture 04 &nbsp; | &nbsp; 11 August 2016
+                                    <span class="topic">Analyzing Matrices as Linear Operators</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        In this lecture, we tried to view an $m \times n$ matrix as a <def>linear operator</def> (analogous to a function) from $\mathbb{R}^n$ to $\mathbb{R}^m$, and attempted an analysis of matrices in terms of linear functions. We learned the notions of <def>linear dependence and independence</def> of a set of vectors, and tried to view, geometrically, the <def>span</def> of a collection of vectors as the space generated by taking their linear combinations. Using the notion of span, we tried to identify the range of the matrix as a subspace of $\mathbb{R}^m$, and figured that the range of an $m \times n$ matrix as a linear operator is essentially its <def>column space</def>, that is, the span of its <def>column vectors</def>. Evidently, $\dim(\textrm{col}(A_{m \times n})) \leq m$.
+                                    </p>
+                                    <p>
+                                        It seemed quite natural to look at the $n \times m$ matrix $A^T$ as a <def>linear operator</def> from $\mathbb{R}^m$ to $\mathbb{R}^n$ (it is NOT the inverse operator of $A$). It was immediately obvious that the <def>row space</def> of the matrix $A$ is identical to the <def>column space</def> of $A^T$, that is, $\textrm{row}(A) = \textrm{col}(A^T)$. Thus, we concluded that $\dim(\textrm{row}(A)) = \dim(\textrm{col}(A^T)) \leq n$, and that $\textrm{row}(A)$ is a subspace of $\mathbb{R}^n$.
+                                    </p>
+                                    <p>
+                                        Next, we viewed the operation of the matrix $A$ on a vector $v \in \mathbb{R}^n$ as a collection of <def>dot products</def> of the rows of $A$ with $v$, and concluded that the solutions of $Av = 0$ must all be <def>orthogonal</def> to every row of $A$, and hence, must be orthogonal to $\textrm{row}(A)$. The collection of all such vectors is called the <def>null space</def> of $A$, and the above analysis illustrated that $\textrm{null}(A) \perp \textrm{row}(A)$. We also observed that $\textrm{null}(A)$ is non-empty as it always contains the zero-vector ($0$) in $\mathbb{R}^n$, and that $\dim(\textrm{null}(A)) \leq n$. Similarly, we identified the <def>null space</def> of $A^T$ as a subspace of $\mathbb{R}^m$, and observed that $\textrm{null}(A^T) \perp \textrm{row}(A^T)$, that is, $\textrm{null}(A^T) \perp \textrm{col}(A)$.
+                                    </p>
+                                    <p>
+                                        In effect, we identified four subspaces for the $m \times n$ matrix $A$ in this lecture -- the <def>row space</def> of $A$ (same as the <def>column space</def> of $A^T$), the <def>column space</def> of $A$ (same as the <def>row space</def> of $A^T$), the <def>null space</def> of $A$, and the <def>null space</def> of $A^T$, as shown in the figure below.
+                                    </p>
+                                    <p align="center">
+                                       <img src="lectures/subspaces.png" width="50%" />
+                                    </p>
+                                    <p>
+                                        <strong><span class="fa fa-bookmark"></span> &nbsp; Reading :</strong> 
+                                        <a href="lectures/Strang_Paper1.pdf">Paper 1</a> and <a href="lectures/Strang_Paper2.pdf">Paper 2</a> by Gilbert Strang &nbsp; | &nbsp; "Geometric Review of Linear Algebra" by Simoncelli (<a href="lectures/Simoncelli_Notes.pdf">link</a>)
+                                    <br />
+                                        <strong><span class="fa fa-puzzle-piece"></span> &nbsp; Homework :</strong> Determine the dimensions of all the four subspaces identified in this lecture, and find their relationship with $m$ and $n$.
+                                    </p>
+
+
+                                    <p class="smallscript" align="right">
+                                        <span class="fa fa-youtube"></span> &nbsp; <a href="http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/">Linear Algebra (Gilbert Strang)</a> &nbsp; | &nbsp; <span class="fa fa-file-pdf-o"></span> &nbsp; <a href="lectures/Strang_Paper1.pdf">Paper 1 (Gilbert Strang)</a> &nbsp; | &nbsp; <a href="lectures/Strang_Paper2.pdf">Paper 2 (Gilbert Strang)</a> &nbsp; | &nbsp; <span class="fa fa-file-pdf-o"></span> &nbsp; <a href="lectures/Savov_Notes.pdf">Linear Algebra Review (Savov)</a>
+                                    </p>
+                                </div> 
+
+                                <button class="accordion">
+                                    Lecture 05 &nbsp; | &nbsp; 16 August 2016
+                                    <span class="topic">Solving Linear Equations and Linear Regression</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        Introduced <def>linear regression</def> from the notion of solving linear equations. 
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+
+                                <button class="accordion">
+                                    Lecture 06 &nbsp; | &nbsp; 17 August 2016
+                                    <span class="topic">Linear Regression and Gradient Descent</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        Introduced the <def>gradient descent</def> algorithm to solve the problem of linear regression.
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+
+                                <button class="accordion">
+                                    Lecture 07 &nbsp; | &nbsp; 25 August 2016
+                                    <span class="topic">Batch and Stochastic Gradient Descent</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        Discussed the <def>batch gradient descent</def> and <def>stochantic gradient descent</def> algorithms to solve the problem of linear regression.
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+
+                                <button class="accordion">
+                                    Lecture 08 &nbsp; | &nbsp; 30 August 2016
+                                    <span class="topic">Estimating the Linear Model</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        Discussed the <def>hypothesis testing</def> and <def>parameter estimation</def> point-of-view of linear regression, in terms of estimating the underlying linear model in data.
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+
+                                <button class="accordion">
+                                    Lecture 09 &nbsp; | &nbsp; 1 September 2016
+                                    <span class="topic">SVD and Principal Compoment Analysis</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        Discussed the <def>singular value decomposition</def> and <def>principal component analysis</def> in connection with explaining variance in the data.
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+
+                                <button class="accordion">
+                                    Lecture 10 &nbsp; | &nbsp; 6 September 2016
+                                    <span class="topic">Classification and Decision Trees</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        Introduced the notion of <def>classification</def> as another supervised learning problem, and discussed <def>decision trees</def> as a model for solving the problem.
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+
+                                <button class="accordion">
+                                    Lecture 11 &nbsp; | &nbsp; 8 September 2016
+                                    <span class="topic">Decision Trees and Random Forests</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        Introduced the notion of <def>random forests</def> as an <def>ensemble model</def> based on decision trees, in connection with solving the problem of classification.
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+
+                                <button class="accordion">
+                                    Lecture 12 &nbsp; | &nbsp; 15 September 2016
+                                    <span class="topic">Experimentation with Data</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        This was a Lab Session, involving hands-on application of linear models and tree-based models to a dataset. Discussed <def>variable importance factor</def> obtained from random forests.
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+                                <br /><br />
+
+                                <h3>Mid-Semester Examination</h3>
+                                <p>
+                                    On 22 September 2016, we had our Mid-Semester Examination for the course. It was a (roughly) six-hour Hackathon, targeted towards the comprehensive EDA and Multiple Regression Analysis of a given dataset (private, non-shareable). It was a Kaggle-like group competition.
+                                </p>
+
+                                <h3>Second Half (Post Mid-Sem)</h3>
+
+                                <button class="accordion">
+                                    Lecture 13 &nbsp; | &nbsp; 27 September 2016
+                                    <span class="topic">Distance Notions and Nearest Neighbors</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        Discussed (recap) various notions of distance, and introduced the concept of <def>nearest neighbor search</def> in context of text-documents. Introduced <def>TF-IDF</def> for documents, and <def>kd-Tree</def> as a data structure for efficient neighborhood search.
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+
+                                <button class="accordion">
+                                    Lecture 14 &nbsp; | &nbsp; 29 September 2016
+                                    <span class="topic">Clustering of Data Points</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        Introduced the concept of <def>unsupervised learning</def> and discussed various algorithms for <def>clustering</def> data points. Specifically, discussed <def>k-Means</def> and <def>hierarchical clustering</def> algorithms and their usage.
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+
+                                <button class="accordion">
+                                    Lecture 15 &nbsp; | &nbsp; 30 September 2016
+                                    <span class="topic">Invited Talk : Deep Learning</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        We had a wonderful guest lecture by Bodhisattwa, Robin, Ayan and Jayanta (from the PGDBA senior batch), introducing the concept of <def>neural networks</def> and <def>deep learning</def> in context of their participation and experience in the Data Science Game 2016.
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+                                <button class="accordion">
+                                    Lecture 16 &nbsp; | &nbsp; 5 October 2016
+                                    <span class="topic">Bias-Variance Tradeoff and Regularized Models</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        Discussed the concept of <def>bias-variance tradeoff</def> in context of overfitting and underfitting a model to a given dataset. Introduced <def>regularized models</def> like ridge regression and lasso to illustrate the optimization of bias and variance.
+                                        Detailed abstract and further resources to come.
+                                    </p>
+                                </div> 
+
+                                <!--
+                                <button class="accordion">
+                                    Lecture 2 &nbsp; | &nbsp; 4 August 2016
+                                    <span class="topic">Fundamental Subspaces</span>
+                                </button>
+                                <div class="panel">
+                                    <p>
+                                        In this lecture, we tried to view an $m \times n$ matrix as a
+                                        <def>linear operator</def> from $\mathbb{R}^n$ to $\mathbb{R}^m$, and attempted an analysis of matrices in terms of linear functions. We learned the notion of
+                                        <def>fundamental subspaces</def> of a generic $m \times n$ matrix, including its rowspace, columnspace and nullspace, and connected it to the notion of its
+                                        <def>rank</def>. In addition, we categorized matrices in terms of the structure of their subspaces.
+                                    </p>
+
+                                    <p class="smallscript" align="right">
+                                        <span class="fa fa-external-link"></span> &nbsp; Lecture Notes &nbsp; | &nbsp; <span class="fa fa-file-pdf-o"></span> &nbsp; Lecture Slides &nbsp; | &nbsp; <span class="fa fa-bookmark-o"></span> &nbsp; Reference &nbsp; | &nbsp; <span class="fa fa-youtube"></span> &nbsp; Video Lecture &nbsp; | &nbsp; <span class="fa fa-file-code-o"></span> &nbsp; R Code
+                                    </p>
+                                </div> 
+                                -->
+
+                            </section>
+
+                            <section>
+                                <header>
+                                    <h2><span class="fa fa-gears"></span> &nbsp;
+                                        <a class="anchor" id="projects">Projects</a></h2>
+                                </header>
+
+                                <p>
+                                    Adequate weightage will be reserved in the End-of-Semeseter evaluation (50%) for the Term Project. Each group is supposed to deliver a Project Presentation (30 mins per group), including a Q&amp;A session (10 mins per group), and a Project Report (theory/code) in the form of a blog-article.
+                                </p>
+
+                                <p>
+                                    Each group is at the liberty of choosing the topic for their Term Project. However, the Project chosen by each group must be approved by Sourav before they may be executed. Potential choices for the term projects may be one from this <a href="resources.html/#idea">list of suggested topics</a>, a substantial extension of one of the <a href="http://www.souravsengupta.com/cds2015/#projects">projects from CDS 2015</a>, or any other practical and/or theoretical project relevant to the course, upon mutual agreement with Sourav.
+                                </p>
+                                <p>
+                                    The last date for finalizing the topic for your project is <strong>7 October 2016</strong>. Project presentations will be scheduled on 2 and 3 December 2016.
+                                </p>
+
+                            </section>
+
+                        </div>
+                        <div class=" 3u 12u(mobile)">
+
+                            <!-- Sidebar -->
+                            <section>
+                                <header>
+                                    <h2><span class="fa fa-info-circle"></span> &nbsp;
+                                        <a class="anchor" id="information">Information</a></h2>
+                                    <h3>Course : BAISI-4 (aka CDS)</h3>
+                                </header>
+
+                                <p><strong>Tuesday &amp; Thursday &nbsp; @ &nbsp; 11:00 - 13:00</strong></p>
+                                <p>
+                                    Assignments + Lecture Scribes = 20%
+                                    <br /> Mid-Sem Exam = 30% &nbsp; | &nbsp; Hackathon
+                                    <br /> End-Sem Exam = 50% &nbsp; | &nbsp; Term Project
+                                </p>
+
+                                <hr />
+
+                                <p class="smallscript" align="right">
+                                    <span class="fa fa-book"></span> &nbsp; <a href="resources.html">Course Structure and Resources</a>
+                                </p>
+
+                            </section>
+
+
+                            <section>
+                                <header>
+                                    <h2><span class="fa fa-pencil"></span> &nbsp;
+                                        <a class="anchor" id="assignments">Assignments</a></h2>
+                                </header>
+
+                                <p>
+                                    Assignments constitute 20% of the total marks, including group scribing for lecture notes (approx. 5%).
+                                </p>
+
+                                <h3>Assignment 1</h3>
+                                <p>
+                                    To be posted. May be on Programming.
+                                </p>
+
+                                <h3>Assignment 2</h3>
+                                <p>
+                                    To be posted. May be a Competition.
+                                </p>
+
+                                <hr />
+
+                                <br />
+
+                                <h3>Groups</h3>
+                                <br />
+
+                                <span class="smallscript">
+                                <ul class="link-list">
+                                    <li>01 : Deepanshu, Himanshu J., Palash, Parag</li>
+                                    <li>02 : Vushesh, Anshuman, Srikant, Subhodeep</li>
+                                    <li>03 : Deepesh, Gunja, Ishita, Sumit</li>
+                                    <li>04 : Swapnika, Sakshi, Shrey, Mahesh Babu</li>
+                                    <li>05 : Deep, Adhi, Harsh, Vyankatesh</li>
+                                    <li>06 : Apoorva, Saurabh, Khushiram, Neetesh</li>
+                                    <li>07 : Prem, Tapas, Kaustubh, Sasank</li>
+                                    <li>08 : Prakhar, Yashas, Waqar, Shivam</li>
+                                    <li>09 : Sidharth, Mukul, Yogesh, Sudhakar</li>
+                                    <li>10 : Ajit, Anushree, Kapil, Rahul</li>
+                                    <li>11 : Abhilash, Apoorv, Dhrubajyoti, Neha</li>
+                                    <li>12 : Gaurav, Himanshu G., Naveen, Mahesh</li>
+                                    <li>13 : Pruthvi, Chandra Mouli, Ranjit, Sandeep</li>
+                                </ul>
+                                </span>
+
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer-wrapper">
+            <footer id="footer" class="container">
+                <div class="row">
+                    <div class="4u 12u(mobile)">
+
+                        <!-- Blurb -->
+                        <section>
+                            <h2><a href="http://www.souravsengupta.com">Sourav Sen Gupta</a> &nbsp; | &nbsp; Instructor</h2>
+                            <p>
+                                <span class="fa fa-building"></span> &nbsp; Office 404, 3rd Floor, Deshmukh Building
+                                <br /> <span class="fa fa-university"></span> &nbsp; R C Bose Centre, Indian Statistical Institute
+                                <br /> <span class="fa fa-map-marker"></span> &nbsp; &nbsp; 203 B T Road, Kolkata 700 108, West Bengal
+                                <br /> <span class="fa fa-phone"></span> &nbsp; +91 94323 44852 &nbsp; | &nbsp; <span class="fa fa-envelope"></span> &nbsp; sg.sourav@gmail.com
+                            </p>
+                        </section>
+
+                    </div>
+                    <div class="4u 12u(mobile)">
+
+                        <!-- Blurb -->
+                        <section>
+                            <h2>Important Links &nbsp; | &nbsp; CDS 2016</h2>
+                            <ul class="link-list">
+                                <li><span class="fa fa-book"></span> &nbsp; <a href="resources.html">Course Structure, Syllabus and Relevant Resources</a></li>
+                                <li><span class="fa fa-calendar"></span> &nbsp; <a href="#">Lecture Notes of the Course -- Scribes on the Blog</a></li>
+                                <li><span class="fa fa-gears"></span> &nbsp; <a href="#">Term Projects of the Course -- Reports on the Blog</a></li>
+                            </ul>
+                        </section>
+
+                    </div>
+                    <div class="4u 12u(mobile)">
+
+                        <!-- Blurb -->
+                        <section>
+                            <h2>Post Graduate Diploma in Business Analytics</h2>
+                            <p>
+                                The <a href="http://www.iitkgp.ac.in/pgdba/">Post Graduate Diploma in Business Analytics (PGDBA)</a> - jointly offered by IIM Calcutta, IIT Kharagpur, and ISI Kolkata - aims to help shape the emerging profession of Business Analytics by delivering a cutting edge inter-disciplinary educational experience.
+                            </p>
+                        </section>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <span class="fa fa-copyright"></span> &nbsp; Sourav Sen Gupta, Indian Statistical Institute. All rights reserved. &nbsp; | &nbsp; Design inspired from <a href="https://html5up.net/halcyonic">Halcyonic</a> by <a href="https://html5up.net/">HTML5 UP</a>.
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/skel-viewport.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function () {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    </script>
+
+    <script type='text/x-mathjax-config'>
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']], displaymath: [['$$','$$']]}});
+    </script>
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML'></script>
+
+</body>
+
+</html>

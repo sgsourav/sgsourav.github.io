@@ -1,0 +1,585 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>CrashML | Sourav Sen Gupta</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+
+<body class="subpage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <header id="header" class="container">
+                <div class="row">
+                    <div class="12u">
+
+                        <!-- Logo -->
+                        <h1><a href="index.html" id="logo">CrashML</a></h1>
+
+                        <!-- Nav -->
+                        <nav id="nav">
+                            <a href="#lectures"><span class="fa fa-calendar"></span> &nbsp; Lecture Sessions</a>
+                            <a href="#resources"><span class="fa fa-book"></span> &nbsp; Books and Videos</a>
+                            <a href="#programming"><span class="fa fa-code"></span> &nbsp; R and Python</a>
+                            <a href="#projects"><span class="fa fa-gears"></span> &nbsp; Hands-on Projects</a>
+                            <a href="#links"><span class="fa fa-link"></span> &nbsp; Cool Links</a>
+                        </nav>
+
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Content -->
+        <div id="content-wrapper">
+            <div id="content">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="12u">
+
+                            <!-- Lectures -->
+                            <section>
+                                <header>
+                                    <h2><span class="fa fa-calendar"></span> &nbsp;
+                                        <a class="anchor" id="lectures">Lecture Sessions</a></h2>
+                                </header>
+
+                                <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Session</th>
+                                            <th scope="col">Topic</th>
+                                            <th scope="col">Sub-Topics</th>
+                                            <th scope="col">Reference</th>
+                                            <th scope="col">Resources</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Session-01</td>
+                                            <td>Introduction</td>
+                                            <td>
+                                                Primary Objectives
+                                                <br />Geometry of Data
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-bookmark-o"></span> &nbsp; James et al. (ISLR) : Ch. 1, 2.1
+                                                <br /><span class="fa fa-youtube"></span> &nbsp;
+                                                <a href="https://www.youtube.com/playlist?list=PL5-da3qGB5ICcUhueCyu25slvsGp8IDTa">Hastie and Tibshirani : Ch. 1 Lectures</a>
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-trophy"></span> &nbsp;
+                                                <a href="https://www.kaggle.com/competitions">Kaggle Competitions</a>
+                                                <br /><span class="fa fa-database"></span> &nbsp;
+                                                <a href="http://archive.ics.uci.edu/ml/">UCI Data Repository</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Session-02</td>
+                                            <td>Linear Regression</td>
+                                            <td>
+                                                as Optimization
+                                                <br />as Estimation
+                                                <br />for Prediction
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-bookmark-o"></span> &nbsp; James et al. (ISLR) : Ch. 3.1, 3.2, 3.4
+                                                <br /><span class="fa fa-youtube"></span> &nbsp;
+                                                <a href="https://www.youtube.com/playlist?list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9">Hastie and Tibshirani : Ch. 3 Lectures</a>
+                                                <br /><span class="fa fa-external-link"></span> &nbsp;
+                                                <a href="https://see.stanford.edu/Course/CS229">Andrew Ng ML Course</a> : Lecture 2
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/WorksheetLinReg.R">WorksheetLinReg.R</a>
+                                                <br /><span class="fa fa-table"></span> &nbsp;
+                                                <a href="lectures/Advertising.csv">Advertising.csv</a>
+                                                <br /><span class="fa fa-external-link"></span> &nbsp;
+                                                <a href="https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression/">Gradient Descent</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Session-03</td>
+                                            <td>Model Selection</td>
+                                            <td>
+                                                by Cross-Validation
+                                                <br />by Subset Selection
+                                                <br />using Regularization
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-bookmark-o"></span> &nbsp; James et al. (ISLR) : Ch. 5.1, 6.1, 6.2
+                                                <br /><span class="fa fa-youtube"></span> &nbsp;
+                                                <a href="https://www.youtube.com/playlist?list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf">Hastie and Tibshirani : Ch. 5 Lectures</a>
+                                                <br /><span class="fa fa-youtube"></span> &nbsp;
+                                                <a href="https://www.youtube.com/playlist?list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI">Hastie and Tibshirani : Ch. 6 Lectures</a>
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/WorksheetModSel.R">WorksheetModSel.R</a>
+                                                <br /><span class="fa fa-table"></span> &nbsp;
+                                                <a href="lectures/Advertising.csv">Advertising.csv</a>
+                                                <br /><span class="fa fa-external-link"></span> &nbsp;
+                                                <a href="https://elitedatascience.com/bias-variance-tradeoff">Bias-Variance</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Homework</td>
+                                            <td>Linear Regression</td>
+                                            <td>Model Building</td>
+                                            <td>
+                                                <span class="fa fa-bookmark-o"></span> &nbsp; James et al. (ISLR) : Ch. 3.6
+                                            </td>
+                                            <td><span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/ExperimentLinReg.R">ExperimentLinReg.R</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Session-04</td>
+                                            <td>Logistic Regression</td>
+                                            <td>
+                                                through Link Function
+                                                <br />and MLE formulation
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-bookmark-o"></span> &nbsp; James et al. (ISLR) : Ch. 4.1 to 4.3
+                                                <br /><span class="fa fa-youtube"></span> &nbsp;
+                                                <a href="https://www.youtube.com/playlist?list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE">Hastie and Tibshirani : Ch. 4 Lectures</a>
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/WorksheetLogReg.R">WorksheetLogReg.R</a>
+                                                <br /><span class="fa fa-external-link"></span> &nbsp;
+                                                <a href="http://www.math.uah.edu/stat/point/Likelihood.html">Maximum Likelihood</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Session-05</td>
+                                            <td>Tree-based Models</td>
+                                            <td>
+                                                for Classification
+                                                <br />for Regression
+                                                <br />Bagging and Boosting
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-bookmark-o"></span> &nbsp; James et al. (ISLR) : Ch. 8.1, 8.2
+                                                <br /><span class="fa fa-youtube"></span> &nbsp;
+                                                <a href="https://www.youtube.com/playlist?list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh">Hastie and Tibshirani : Ch. 8 Lectures</a>
+                                                <br /><span class="fa fa-external-link"></span> &nbsp;
+                                                <a href="https://www.coursera.org/learn/ml-classification">ML Course from UW</a> : Weeks 3, 4, 5
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/WorksheetClassTree.R">WorksheetClassTree.R</a>
+                                                <br /><span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/WorksheetRegTree.R">WorksheetRegTree.R</a>
+                                                <br /><span class="fa fa-table"></span> &nbsp;
+                                                <a href="lectures/CarEvaluation.csv">CarEvaluation.csv</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Session-06</td>
+                                            <td>Support Vector Models</td>
+                                            <td>
+                                                through Geometry
+                                                <br />by Optimization
+                                                <br />by Transformation
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-bookmark-o"></span> &nbsp; James et al. (ISLR) : Ch. 9.1 to 9.5
+                                                <br /><span class="fa fa-youtube"></span> &nbsp;
+                                                <a href="https://www.youtube.com/playlist?list=PL5-da3qGB5IDl6MkmovVdZwyYOhpCxo5o">Hastie and Tibshirani : Ch. 9 Lectures</a>
+                                                <br /><span class="fa fa-external-link"></span> &nbsp;
+                                                <a href="https://see.stanford.edu/Course/CS229">Andrew Ng ML Course</a> : Lectures 7, 8
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/WorksheetSupVec.R">WorksheetSupVec.R</a>
+                                                <br /><span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/WorksheetSVM.R">WorksheetSVM.R</a>
+                                                <br /><span class="fa fa-external-link"></span> &nbsp;
+                                                <a href="http://www.cs.nyu.edu/~mohri/icml2011-tutorial/">Learning Kernels</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Session-07</td>
+                                            <td>Un-Supervised Learning</td>
+                                            <td>
+                                                through Geometry
+                                                <br />by Clustering
+                                                <br />by Embedding
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-bookmark-o"></span> &nbsp; James et al. (ISLR) : Ch. 10.1 to 10.3
+                                                <br /><span class="fa fa-youtube"></span> &nbsp;
+                                                <a href="https://www.youtube.com/playlist?list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2">Hastie and Tibshirani : Ch. 10 Lectures</a>
+                                                <br /><span class="fa fa-external-link"></span> &nbsp;
+                                                <a href="https://www.coursera.org/learn/ml-clustering-and-retrieval">ML Course from UW</a> : Weeks 1 to 6
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/WorksheetClustering.R">WorksheetClustering.R</a>
+                                                <br /><span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/WorksheetDimRed.R">WorksheetDimRed.R</a>
+                                                <br /><span class="fa fa-file-image-o"></span> &nbsp;
+                                                <a href="lectures/joker.jpg">joker.jpg</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Session-08</td>
+                                            <td>Misc. Topics &amp; Pointers</td>
+                                            <td>
+                                                Google PageRank
+                                                <br /> Scraping Web-Data
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-bookmark-o"></span> &nbsp; Leskovec et al. (MMDS) : Ch. 5 and 9
+                                                <br /><span class="fa fa-youtube"></span> &nbsp;
+                                                <a href="https://www.youtube.com/playlist?list=PL_npY1DYXHPT-3dorG7Em6d18P4JRFDvH">Andrew Ng Lectures</a> (Recommenders)
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/WorksheetPageRank.R">WorksheetPageRank.R</a>
+                                                <br /><span class="fa fa-file-code-o"></span> &nbsp;
+                                                <a href="lectures/WorksheetScraping.R">WorksheetScraping.R</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+
+                            </section>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="6u 12u(mobile) important(mobile)">
+
+                            <!-- Books -->
+                            <section>
+                                <header>
+                                    <h2><span class="fa fa-book"></span> &nbsp;
+                                        <a class="anchor" id="resources">Books and Compilations</a></h2>
+                                    <h3>Textbooks and Recommended References</h3>
+                                </header>
+
+                                <ul class="book-list">
+                                    <li>
+                                        <img src="images/resources/Book_ISL.jpg" alt="ISL" />
+                                        <p>An Introduction to Statistical Learning</p>
+                                        <span>Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani</span>
+                                        <span><a href="http://www-bcf.usc.edu/~gareth/ISL/">Available online at this link</a></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/resources/Book_ESL.jpg" alt="ESL" />
+                                        <p>The Elements of Statistical Learning</p>
+                                        <span>Trevor Hastie, Robert Tibshirani and Jerome Friedman</span>
+                                        <span><a href="http://web.stanford.edu/~hastie/ElemStatLearn/">Available online at this link</a></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/resources/Book_MMD.jpg" alt="MMD" />
+                                        <p>Mining of Massive Datasets</p>
+                                        <span>Jure Leskovec, Anand Rajaraman and Jeff Ullman</span>
+                                        <span><a href="http://www.mmds.org/">Available online at this link</a></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/resources/Book_CormenEtal.jpg" alt="CormenEtal" />
+                                        <p>Introduction to Algorithms</p>
+                                        <span>Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein</span>
+                                        <span>The MIT Press (Third Edition), 2009</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/resources/Book_Solomon.jpg" alt="Solomon" />
+                                        <p>Numerical Algorithms</p>
+                                        <span>Justin Solomon</span>
+                                        <span><a href="https://people.csail.mit.edu/jsolomon/share/book/numerical_book.pdf">Available online at this link</a></span>
+                                    </li>
+                                </ul>
+
+                            </section>
+
+                        </div>
+
+                        <div class="6u 12u(mobile)">
+
+                            <!-- Videos -->
+                            <section>
+                                <header>
+                                    <h2><span class="fa fa-play"></span> &nbsp;
+                                        Lecture Videos and Notes</h2>
+                                    <h3>Adds a completely new dimension to Reading</h3>
+                                </header>
+
+                                <ul class="quote-list">
+                                    <li>
+                                        <img src="images/resources/Lectures_HastieTibshirani.jpg" alt="HastieTibshirani" />
+                                        <p>Statistical Learning &nbsp; | &nbsp; Hastie and Tibshirani</p>
+                                        <span><a href="http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/">Lecture videos available online at this link</a></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/resources/Lectures_Fox.jpg" alt="Ng" />
+                                        <p>Machine Learning &nbsp; | &nbsp; Univ. of Washington</p>
+                                        <span><a href="https://www.coursera.org/specializations/machine-learning">Coursera course available online at this link</a></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/resources/Lectures_Ng.jpg" alt="Ng" />
+                                        <p>Machine Learning &nbsp; | &nbsp; Andrew Ng</p>
+                                        <span><a href="https://see.stanford.edu/Course/CS229">Lecture videos available online at this link</a></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/resources/Lectures_deFreitas.jpg" alt="deFreitas" />
+                                        <p>Machine Learning &nbsp; | &nbsp; Nando de Freitas</p>
+                                        <span><a href="https://www.youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf&feature=view_all">Lecture videos available online at this link</a></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/resources/Lectures_Solomon.jpg" alt="Solomon" />
+                                        <p>Numerical Algorithms &nbsp; | &nbsp; Justin Solomon</p>
+                                        <span><a href="http://graphics.stanford.edu/courses/cs205a-13-fall/schedule.html">Lecture videos available online at this link</a></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/resources/Lectures_Strang.jpg" alt="Strang" />
+                                        <p>Linear Algebra &nbsp; | &nbsp; Gilbert Strang</p>
+                                        <span><a href="http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/">Lecture videos available online at this link</a></span>
+                                    </li>
+                                </ul>
+
+                            </section>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="6u 12u(mobile) important(mobile)">
+
+                            <!-- R -->
+                            <section>
+                                <header>
+                                    <h2><span class="fa fa-code"></span> &nbsp;
+                                        <a class="anchor" id="programming">R Programming Resources</a></h2>
+                                </header>
+
+                                <ul class="check-list">
+                                    <li>
+                                        <strong><a href="https://www.datacamp.com/courses/free-introduction-to-r">Introduction to R by DataCamp</a></strong> &nbsp; | &nbsp; Quite nice introduction, and even better, free!
+                                    </li>
+                                    <li>
+                                        <strong><a href="http://www.mayin.org/ajayshah/KB/R/index.html">R by Example</a></strong> &nbsp; | &nbsp; <span class="fa fa-pencil-square-o"></span> &nbsp; By Ajay Shah &nbsp; | &nbsp; Quick illustrative examples of features.
+                                    </li>
+                                    <li>
+                                        <strong><a href="http://adv-r.had.co.nz/">Advanced topics in R</a></strong> &nbsp; and &nbsp; <strong><a href="http://adv-r.had.co.nz/memory.html">Understanding Memory in R</a></strong> &nbsp; | &nbsp; <span class="fa fa-pencil-square-o"></span> &nbsp; By Hadley Wickham
+                                        <br /> Really good articles on the advanced technical nitty-gritties of R.
+                                    </li>
+                                    <li>
+                                        <strong><a href="http://www.rdatamining.com/docs/r-and-data-mining-examples-and-case-studies">R and Data Mining</a></strong> &nbsp; | &nbsp; <span class="fa fa-pencil-square-o"></span> &nbsp; By Yanchang Zhao
+                                        <br /> Wonderful book with a number of cool applications of Data Mining.
+                                    </li>
+                                    <li><strong><a href="http://www.stat.ufl.edu/archived/casella/ShortCourse/MCMC-UseR.pdf">Introducing
+                                        Monte Carlo Methods with R</a></strong> &nbsp; | &nbsp; <span class="fa fa-pencil-square-o"></span> &nbsp; By C.P. Robert and G. Casella
+                                        <br /> Lovely introduction to Monte Carlo simulations with hands-on applications in R.
+                                    </li>
+                                    <li>
+                                        <strong><a href="https://www.countbayesie.com/blog/2015/3/3/6-amazing-trick-with-monte-carlo-simulations">Monte Carlo Simulations in R</a></strong> &nbsp; | &nbsp; <span class="fa fa-pencil-square-o"></span> &nbsp; By Will Kurt
+                                        <br /> Nice blog-post introducing Monte Carlo simulations using R.
+                                    </li>
+                                </ul>
+
+                            </section>
+                        </div>
+
+                        <div class="6u 12u(mobile)">
+
+                            <!-- Python -->
+                            <section>
+                                <header>
+                                    <h2><span class="fa fa-code"></span> &nbsp;
+                                        Python Programming Resources</h2>
+                                </header>
+
+                                <ul class="check-list">
+                                    <li>
+                                        <strong><a href="https://developers.google.com/edu/python/">Python Class by Google</a></strong> &nbsp; | &nbsp; Decent online class to learn the basics of Python.
+                                    </li>
+                                    <li>
+                                        <strong><a href="http://greenteapress.com/wp/think-python-2e/">Think Python</a></strong> &nbsp; | &nbsp; <span class="fa fa-pencil-square-o"></span> &nbsp; By Allen B. Downey &nbsp; | &nbsp; Teaches CS through Python.
+                                    </li>
+                                    <li>
+                                        <strong><a href="https://www.datacamp.com/courses/intro-to-python-for-data-science">Introduction to Python for Data Science by DataCamp</a></strong> &nbsp; | &nbsp; Really nice free course.
+                                    </li>
+                                    <li>
+                                        <strong><a href="http://scikit-learn.org/stable/">scikit-learn -- Machine Learning in Python</a></strong>
+                                        <br /> Undoubtedly the best Python package for Data Analytics and Machine Learning.
+                                        <br />
+                                        <span class="fa fa-map-o"></span> &nbsp; <a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html">Visual Map</a> for ML Algorithms &nbsp; | &nbsp; <span class="fa fa-youtube"></span> &nbsp;
+                                        <a href="https://www.youtube.com/playlist?list=PL5-da3qGB5ICeMbQuqbbCOQWcS6OYBr5A">Video Tutorials</a> from Data School
+                                    </li>
+                                    <li>
+                                        <strong><a href="https://www.packtpub.com/big-data-and-business-intelligence/building-machine-learning-systems-python">Building Machine Learning Systems with Python</a></strong>
+                                        <br /> Wonderful book with a number of cool applications of Machine Learning.
+                                        <br /> <span class="fa fa-pencil-square-o"></span> &nbsp; By Willi Richert and Luis Pedro Coelho &nbsp; | &nbsp; <span class="fa fa-github"></span> &nbsp; <a href="https://github.com/luispedro/BuildingMachineLearningSystemsWithPython">Source Codes</a> from GitHub
+                                    </li>
+                                    <li>
+                                        <strong><a href="http://guidetodatamining.com/">A Programmer's Guide to Data Mining</a></strong> &nbsp; | &nbsp; <span class="fa fa-pencil-square-o"></span> &nbsp; By Ron Zacharski &nbsp; | &nbsp; Really nice!
+                                    </li>
+                                </ul>
+
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="6u 12u(mobile) important(mobile)">
+
+                            <!-- Projects -->
+                            <section>
+                                <header>
+                                    <h2><span class="fa fa-gears"></span> &nbsp;
+                                        <a class="anchor" id="projects">Hands-on Projects</a></h2>
+                                </header>
+
+                                <p>
+                                    Take part in a competition on
+                                    <a href="https://www.kaggle.com/competitions">Kaggle</a>,
+                                    <a href="https://www.drivendata.org/competitions/">DrivenData</a>,
+                                    <a href="https://www.crowdanalytix.com/community">CrowdAnalytix</a>,
+                                    <a href="https://www.innocentive.com/ar/challenge/browse">InnoCentive</a>,
+                                    etc., or try to explore the open datasets made available by
+                                    <a href="https://data.unicef.org/">UNICEF</a>,
+                                    <a href="http://www.who.int/gho/en/">WHO</a>,
+                                    <a href="https://aws.amazon.com/public-datasets/">AWS</a>,
+                                    <a href="https://www.google.com/publicdata/directory">Google</a>,
+                                    <a href="http://data.europa.eu/euodp/en/data/">EU</a>, and
+                                    <a href="https://www.data.gov/">US Govt</a>.
+                                </p>
+                                <p>
+                                    Try to get inspired by the list of
+                                    <a href="http://cs229.stanford.edu/">Stanford CS229</a>
+                                    (Andrew Ng) projects available at
+                                    <a href="http://cs229.stanford.edu/projects2016.html">2016</a>,
+                                    <a href="http://cs229.stanford.edu/projects2016spr.html">2016 Spring</a>,
+                                    <a href="http://cs229.stanford.edu/projects2015.html">2015</a>,
+                                    <a href="http://cs229.stanford.edu/projects2014.html">2014</a>,
+                                    <a href="http://cs229.stanford.edu/projects2013.html">2013</a>,
+                                    <a href="http://cs229.stanford.edu/projects2012.html">2012</a>,
+                                    <a href="http://cs229.stanford.edu/projects2011.html">2011</a>,
+                                    <a href="http://cs229.stanford.edu/projects2010.html">2010</a>,
+                                    <a href="http://cs229.stanford.edu/projects2009.html">2009</a>,
+                                    <a href="http://cs229.stanford.edu/projects2008.html">2008</a>,
+                                    <a href="http://cs229.stanford.edu/projects2007.html">2007</a>,
+                                    <a href="http://cs229.stanford.edu/projects2006.html">2006</a>,
+                                    <a href="http://cs229.stanford.edu/projects2005.html">2005</a>,
+                                    <a href="http://cs229.stanford.edu/projects2004.html">2004</a>,
+                                    or by the diverse array of
+                                    <a href="https://mitsloan.mit.edu/LearningEdge/Pages/Case-Studies.aspx">Business Case Studies</a>
+                                    posted by the Sloan School, MIT.
+                                </p>
+                                <p>
+                                    Check the list of PGDBA projects available at
+                                    <a href="http://courseprojects.souravsengupta.com/category/cds2016/?s=">CDS 2016</a>,
+                                    <a href="http://courseprojects.souravsengupta.com/category/cds2015/?s=">CDS 2015</a>,
+                                    completed as a part of the &quot;Computing for Data Sciences&quot; course offered at Indian Statistical Institute, Kolkata.
+                                </p>
+
+
+                            </section>
+                        </div>
+
+                        <div class="6u 12u(mobile)">
+
+                            <!-- Links -->
+                            <section>
+                                <header>
+                                    <h2><span class="fa fa-link"></span> &nbsp;
+                                        <a class="anchor" id="links">Cool Links</a></h2>
+                                </header>
+
+                                <ul class="link-list">
+                                    <li>
+                                        <span class="fa fa-external-link"></span> &nbsp;
+                                        <strong><a href="https://experiments.withgoogle.com/ai">Google AI Experiments</a></strong>
+                                        &nbsp; | &nbsp; Google takes &quot;cool&quot; to a new level in Artificial Intelligence.
+                                    </li>
+                                    <li>
+                                        <span class="fa fa-external-link"></span> &nbsp;
+                                        <strong><a href="http://rtw.ml.cmu.edu/rtw/">NELL: Never-Ending Language Learning</a></strong>
+                                        &nbsp; | &nbsp; An awesome idea from Carnegie Mellon U.
+                                    </li>
+                                    <li>
+                                        <span class="fa fa-external-link"></span> &nbsp;
+                                        <strong><a href="https://d3js.org/">D3.js :  Data-Driven Documents</a></strong>
+                                        &nbsp; | &nbsp; An excellent JavaScript library to showcase data.
+                                    </li>
+                                    <li>
+                                        <span class="fa fa-external-link"></span> &nbsp;
+                                        <strong><a href="http://blog.yhat.com/">The Yhat Blog</a></strong>
+                                        &nbsp; | &nbsp; The best online source for authoritative articles on Data Science.
+                                    </li>
+                                    <li>
+                                        <span class="fa fa-external-link"></span> &nbsp;
+                                        <strong><a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">A visual introduction to machine learning</a></strong>
+                                        &nbsp; | &nbsp; Simply amazing; a visual treat indeed.
+                                    </li>
+                                    <li>
+                                        <span class="fa fa-external-link"></span> &nbsp;
+                                        <strong><a href="http://colah.github.io/">colah's blog</a></strong>
+                                        &nbsp; | &nbsp; A visual introduction to complicated concepts in Neural Networks.
+                                    </li>
+                                </ul>
+
+                                <p class="smallscript" align="right">
+                                    Let me know if you find other cool links related to ML and Data Science, and I will include it in this list.
+                                </p>
+
+                            </section>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <span class="fa fa-copyright"></span> &nbsp; <a href="http://www.souravsengupta.com/">Sourav Sen Gupta</a>, <a href="http://www.isical.ac.in/">Indian Statistical Institute</a>. All rights reserved. &nbsp; | &nbsp; Design inspired from <a href="https://html5up.net/halcyonic">Halcyonic</a> by <a href="https://html5up.net/">HTML5 UP</a>.
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/skel-viewport.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function () {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    </script>
+
+    <script type='text/x-mathjax-config'>
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']], displaymath: [['$$','$$']]}});
+    </script>
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML'></script>
+
+</body>
+
+</html>

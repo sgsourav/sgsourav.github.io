@@ -1,0 +1,35 @@
+===============================================================================
+THIS IS STRICTLY AN INDIVIDUAL ASSIGNMENT. NO FORM OF COLLABORATION IS ALLOWED.
+===============================================================================
+
+Read through the following book, and diligently complete Exercise 0 through 39.
+Learn Python the Hard Way, Zed A. Shaw (http://learnpythonthehardway.org/book/)
+
+-------------------------------------------------------------------------------
+
+Write each of the following search routines as individual functions in Python.
+Each search function should take as input a List of integers, as appropriate.
+
+-- Linear Search (input: unsorted list)		[5]
+-- Binary Search (input: sorted list)   	[10]
+
+-------------------------------------------------------------------------------
+
+Write each of the following sorting routines as individual functions in Python.
+Each sorting function should take as input an arbitrary List of integers.
+
+-- Insertion Sort		[10]
+-- Selection Sort		[10]
+-- Bubble Sort			[10]
+-- Quick Sort			[15]
+-- Merge Sort			[15]
+-- Shell Sort			[15]
+
+Visual cue : https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
+
+-------------------------------------------------------------------------------
+Marks : (5 + 10) + (10 + 10 + 10 + 15 + 15 + 15) + 10 {Good Prog. Habit} = 100.
+-------------------------------------------------------------------------------
+Submit a single python file a2_pgdbaXX.py containing all aforesaid functions,
+where XX is your two-digit roll number, e.g. a2_pgdba05.py, a2_pgdba37.py, etc.
+-------------------------------------------------------------------------------

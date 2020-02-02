@@ -1,0 +1,72 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage[T1]{fontenc}
+
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+  \hrule
+  \vspace*{10pt}
+  
+  {\huge Introduction to Programming}
+
+  \vspace*{10pt}
+
+  {\large MTech CS, First Year, Indian Statistical Institute}
+  
+  \vspace*{10pt}  
+  \hrule
+  \vspace*{20pt}
+  
+  \textbf{\Large Assignment 3 : Basic Data Structure}
+
+  Posted on 1 October 2014 $ \ \vert \ $ Due on 20 October 2014
+
+  \vspace*{10pt}
+  
+\end{center}
+
+
+
+\subsection*{Problem 1}
+
+Write a C code to construct a singly linked list, and to perform basic operations on the same. The program should allow the user to create a new linked list, add a node to the linked list at a location desired by the user (beginning, end, or after a specific node), delete a node from a location desired by the user (beginning, end, or specified otherwise), and print the linked list.
+
+
+\subsection*{Problem 2}
+
+Given an existing singly linked list (by address of the first node), write a function \texttt{findLoop} to determine if there exists any loop in the list. Write another function \texttt{removeLoop} to break/remove loop(s) in the list, if there exists any. For this problem, provide a theoretical write-up explaining the algorithm you use, and discuss its runtime.
+
+
+\subsection*{Problem 3}
+
+Implement a stack and a queue, independently, using singly linked lists. The structures should have basic operational functions -- \texttt{stackPush}, \texttt{stackPop}, \texttt{queuePush}, \texttt{queuePop} -- and independent functions \texttt{stackPrint} and \texttt{queuePrint} to print the elements in the respective structures.
+
+
+\subsection*{Problem 4}
+
+Implement a queue using only stack(s) as components; the standard queue functions \texttt{queuePush} and \texttt{queuePop} should be simulated by calling native stack functions like \texttt{stackPush} and \texttt{stackPop} on the component stack(s). Similarly, implement a stack using only queue(s) as components.
+
+
+\subsection*{Problem 5}
+
+Write a C code to implement a single-line command-line scientific calculator. The command-line input from the user will be a completely parenthesized \emph{infix} mathematical expression (without gaps) comprising of basic binary arithmetic operations like \texttt{+,-,*,/,\%} and \texttt{\^} (power), and basic mathematical functions like \texttt{sin,cos,tan,log,exp} etc. You may use the \texttt{math.h} library.
+
+\textbf{Bonus:} In addition to evaluating the expression, print the \emph{prefix} and \emph{postfix} forms, and allow the user to input rational numbers in decimal format within the aforesaid mathematical expression. 
+
+
+
+\vfill
+
+\hfill Good Luck! {\Large\smiley{}}
+
+\end{document}

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="Numerical Analysis" name="description">
+    <meta content="NumAna 2016, Sourav Sen Gupta, ISI Kolkata, Cryptography, Mathematics" name="keywords">
+
+    <title>BStat | numana2016</title>
+    <link href="../ssg-style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="header-content">
+            <div id="main-heading">BStat</div>
+            <div id="sub-heading">Numerical
+                <br />Analysis</div>
+            <div id="header-logo">&nbsp;</div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="menu">
+        <div id="menu-content">
+            <div id="left-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#information">Information</a></li>
+                    <li><a href="#lectures">Lectures</a></li>
+                    <li><a href="#assignments">Assignments</a></li>
+                    <li><a href="#tests">Tests</a></li>
+                </ul>
+            </div>
+
+            <div id="right-menu">
+                <ul>
+                    <li><a href="http://www.souravsengupta.com">Sourav Sen Gupta</a></li>
+                    <li><a href="http://www.isical.ac.in" target="_blank">ISI Kolkata</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="menugap"></div>
+
+    <div class="clear"></div>
+
+    <div id="container">
+
+        <div id="content">
+
+            <div id="left-mid-column">
+
+                <h1>Information
+            <a class="anchor" id="information">information</a></h1>
+
+                <table id="one-column-emphasis">
+                    <colgroup>
+                        <col class="oce-first" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>Course</td>
+                            <td><strong>Numerical Analysis</strong> for BStat (First Year, Second Semester)</td>
+                        </tr>
+                        <tr>
+                            <td>Instructor</td>
+                            <td><a href="http://www.souravsengupta.com/">Sourav Sen Gupta</a>, R C Bose Centre, ISI Kolkata</td>
+                        </tr>
+                        <tr>
+                            <td>Lectures</td>
+                            <td>Tuesday (14:00 - 16:00) and Friday (11:00 - 13:00)</td>
+                        </tr>
+                        <tr>
+                            <td>Office Hours</td>
+                            <td>Tuesday (16:30 - 18:00) -- following the lecture session</td>
+                        </tr>
+                        <tr>
+                            <td>Marks</td>
+                            <td>Assignments : Mid-Sem : End-Sem &nbsp; = &nbsp; 25% : 25% : 50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br />
+
+                <h4>Essential Resources</h4> It is advised to follow these resources closely throughout the duration of this course.
+                <br />
+                <br />
+
+                <table id="one-column-emphasis">
+                    <colgroup>
+                        <col class="oce-first" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col">Resource</th>
+                            <th scope="col">Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Textbook</td>
+                            <td>Elementary Numerical Analysis - An Algorithmic Approach
+                                <br /> Samuel Conte and Carl de Boor (McGraw-Hill Education)</td>
+                            <td>(T1)</td>
+                        </tr>
+                        <tr>
+                            <td>Reference</td>
+                            <td>Numerical Algorithms -- by Justin Solomon
+                                <br />(<a href="resources/NumAnaBook_Solomon.pdf">available as a PDF document at this link</a>)</td>
+                            <td>(R1)</td>
+                        </tr>
+                        <tr>
+                            <td>Coding</td>
+                            <td>A (very) short introduction to R -- by Paul Torfs and Claudia Brauer
+                                <br />(<a href="resources/TorfsBrauer_ShortIntroR.pdf">available as a PDF document at this link</a>)</td>
+                            <td>(C1)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br />
+
+                <h4>Optional Resources</h4> In case you want to stay a bit ahead of the lectures, you may follow these resources at your leisure.
+
+                <br />
+                <br />
+
+                <table id="one-column-emphasis">
+                    <colgroup>
+                        <col class="oce-first" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col">Resource</th>
+                            <th scope="col">Links</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Course</td>
+                            <td>Mathematical Methods (Stanford) -- by Justin Solomon
+                                <br /> (lovely set of lecture videos and course material) </td>
+                            <td><a href="http://graphics.stanford.edu/courses/cs205a-13-fall/schedule.html">Course</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reference</td>
+                            <td> Numerical Linear Algebra -- by Lloyd N. Trefethen and David Bau
+                                <br /> (really nice book, organized as a series of lectures) </td>
+                            <td> NA </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+                <h1>Lectures
+            <a class="anchor" id="lectures">lectures</a></h1> The course constitutes of approximately 48 contact hours (24 classes) of Instructional Sessions.
+                <br />
+                <br /> 28 hours (14 classes) will be conducted as Lectures at Classroom 524, 5th Floor, S N Bose Building.
+                <br /> 20 hours (10 classes) will be conducted as Lab Sessions at CSSC Lab I, 4th Floor, S N Bose Building.
+
+                <br />
+                <br />
+
+                <table id="one-column-emphasis">
+                    <colgroup>
+                        <col class="oce-first" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">Topic</th>
+                            <th scope="col">Links</th>
+                            <th scope="col">Reference</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>05.01.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td>Intro to Numerical Analysis</td>
+                            <td> <a href="https://youtu.be/dkT8yuI2d50">Video</a> </td>
+                            <td> -- </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>14.01.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td>Numerics and Error Analysis
+                                <br /> <a href="scribes/Lecture1.pdf">Scribe [PDF]</a></td>
+                            <td> <a href="https://youtu.be/VNJ4lV9VBn4">Video</a> </td>
+                            <td> (T1) Chap. 1
+                                <br /> (R1) Chap. 2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>18.01.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Linear Algebra Review
+                                <br /> <a href="scribes/Lecture2.pdf">Scribe [PDF]</a></td>
+                            <td> <a href="https://youtu.be/nHlE7EgJFds">Video</a>
+                                <br /> <a href="resources/Strang_Paper1.pdf">Paper</a> </td>
+                            <td> (T1) Sec 4.1
+                                <br /> (R1) Chap. 1</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>21.01.16</td>
+                            <td><img src="../images/lab.png" /></td>
+                            <td> Basics of LaTeX (informal) </td>
+                            <td> <a href="https://en.wikibooks.org/wiki/LaTeX">Wiki</a> </td>
+                            <td> <a href="resources/latex_cheatsheet.pdf">Cheatsheet</a> </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>29.01.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Matrix Norms and SVD</td>
+                            <td> <a href="resources/Strang_Paper2.pdf">Paper</a> </td>
+                            <td> (R1) Chap. 7 </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>02.02.16</td>
+                            <td><img src="../images/lab.png" /></td>
+                            <td> LU Factorization
+                                <br /> <a href="scribes/Lecture4.pdf">Scribe [PDF]</a></td>
+                            <td> <a href="https://youtu.be/RoZUtMX_Dro">Video 1</a>
+                                <br /> <a href="https://youtu.be/BSrRrjr6t_g">Video 2</a> </td>
+                            <td> (T1) Sec 4.2 - 4.4
+                                <br /> (R1) Chap. 3 </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>03.02.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Eigenvalues and Eigenvectors</td>
+                            <td> <a href="https://youtu.be/g3-oinWys8I">Video</a></td>
+                            <td> (T1) Sec 4.8
+                                <br /> (R1) Chap. 6 </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>05.02.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Gram-Schmidt method for QR
+                                <br /> <a href="scribes/Lecture6.pdf">Scribe [PDF]</a></td>
+                            <td> <a href="https://youtu.be/Kb3NNk2ikSs">Video</a> </td>
+                            <td> (R1) Chap. 5</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>09.02.16</td>
+                            <td><img src="../images/lab.png" /></td>
+                            <td> SVD and QR Iteration
+                                <br /> <a href="resources/svdImage.R">R Code</a> &nbsp; | &nbsp;
+                                <a href="resources/ElvisNixon.jpg">Image</a></td>
+                            <td> <a href="https://youtu.be/38nH_btB1aI">Video</a></td>
+                            <td> (T1) Sec 4.8
+                                <br /> (R1) Chap. 6 </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>10.02.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Householder method for QR </td>
+                            <td> <a href="https://youtu.be/Kb3NNk2ikSs">Video 1</a>
+                                <br /> <a href="https://youtu.be/8HDdjMiTTXM">Video 2</a></td>
+                            <td> (R1) Chap. 5 </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>15.02.16</td>
+                            <td><img src="../images/lab.png" /></td>
+                            <td> Conditioning and Stability </td>
+                            <td> <a href="https://youtu.be/wjbrY6zHmMA">Video 1</a>
+                                <br /> <a href="https://youtu.be/D5ABGSplM8c">Video 2</a></td>
+                            <td> (T1) Sec 4.5
+                                <br /> (R1) Sec 4.3 </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>19.02.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Recap for Mid-Sem Exam </td>
+                            <td colspan="2"> <a href="exams/midsemSample.pdf">Sample Question for Mid-Sem</a> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Break : 22 - 26 Feb 2016</td>
+                            <td>Mid-Sem Exam (22.02.16)</td>
+                            <td colspan="2"><a href="exams/midsemQues.pdf">Mid-Sem Question Paper</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>29.02.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Solving Non-Linear Equations
+                                <br /> (bisection, fixed point) </td>
+                            <td> <a href="https://youtu.be/JO6hUjfkqaw">Video</a> </td>
+                            <td> (T1) Chap. 3
+                                <br /> (R1) Chap. 8.1 </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>04.03.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Solving Non-Linear Equations
+                                <br /> (Newton-Raphson, secant) </td>
+                            <td> <a href="https://youtu.be/3O7DMazZ8BQ">Video</a> </td>
+                            <td> (T1) Chap. 3
+                                <br /> (R1) Chap. 8.1 </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>09.03.16</td>
+                            <td><img src="../images/lab.png" /></td>
+                            <td> Minimizing Functions
+                                <br /> (gradient descent) </td>
+                            <td> <a href="https://youtu.be/eikJboPQDT0">Video 1</a>
+                                <br /> <a href="https://youtu.be/Fn8qXpIcdnI">Video 2</a>
+                                <br /> <a href="https://youtu.be/ZgXjKa0ChDw">Video 3</a> </td>
+                            <td> (T1) Chap. 5.1
+                                <br /> (R1) Chap. 9.4.1 </td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>11.03.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Minimizing Functions
+                                <br /> (Newton, Golden-section) </td>
+                            <td> <a href="https://youtu.be/sQS4bKRc4-U">Video 1</a>
+                                <br /> <a href="https://youtu.be/hdE3Yuf0gJ0">Video 2</a> </td>
+                            <td> (T1) Chap. 5.2
+                                <br /> (R1) Chap. 9.3 </td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>15.03.16</td>
+                            <td><img src="../images/lab.png" /></td>
+                            <td> Polynomial Interpolation
+                                <br /> (basis for interpolation) </td>
+                            <td> <a href="https://youtu.be/Y6RFE9KgjM8">Video</a> </td>
+                            <td> (T1) Chap. 2.1-2
+                                <br /> (R1) Chap. 13.1 </td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>18.03.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Polynomial Interpolation
+                                <br /> (piecewise interpolation) </td>
+                            <td> <a href="https://youtu.be/H9kkH1WPnNo">Video</a> </td>
+                            <td> (T1) Chap. 2.3
+                                <br /> (R1) Chap. 13.1 </td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>21.03.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Numerical Integration </td>
+                            <td> <a href="https://youtu.be/PeKVxX4FiB0">Video</a> </td>
+                            <td> (T1) Chap. 7.2
+                                <br /> (R1) Chap. 14.2 </td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>29.03.16</td>
+                            <td><img src="../images/lab.png" /></td>
+                            <td> Numerical Integration
+                                <br /> and Differentiation </td>
+                            <td> <a href="https://youtu.be/8lcCVrW-uME">Video</a> </td>
+                            <td> (T1) Chap. 7.2
+                                <br /> (R1) Chap. 14.2 </td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>31.03.16</td>
+                            <td><img src="../images/class.png" /></td>
+                            <td> Numerical Differentiation </td>
+                            <td> <a href="https://youtu.be/f0EFUW6mI1E">Video</a> </td>
+                            <td> (T1) Chap. 7.1
+                                <br /> (R1) Chap. 14.3 </td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>05.04.16</td>
+                            <td><img src="../images/lab.png" /></td>
+                            <td> Solution of ODEs
+                                <br /> (basics and Euler methods) </td>
+                            <td> <a href="https://youtu.be/PIXSwAPV-gQ">Video 1</a>
+                                <br /> <a href="https://youtu.be/sIogR1KdmfA">Video 2</a>
+                                <br /> <a href="https://youtu.be/VrFohZFmSYw">Video 3</a> </td>
+                            <td> (T1) Chap. 8.1-4
+                                <br /> (R1) Chap. 15.3 </td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>12.04.16</td>
+                            <td><img src="../images/lab.png" /></td>
+                            <td> Solution of ODEs
+                                <br /> (Euler and Runge-Kutta) </td>
+                            <td> <a href="https://youtu.be/LbKKzMag5Rc">Video 1</a>
+                                <br /> <a href="https://youtu.be/wr3-dWoxiY4">Video 2</a> </td>
+                            <td> (T1) Chap. 8.5
+                                <br /> (R1) Chap. 15.3 </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Break : 16 - 24 Apr 2016</td>
+                            <td>End-Sem Exam (04.05.16)</td>
+                            <td colspan="2"> Closed-Notes/Closed-Book Test </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+                <h1>Assignments
+                <a class="anchor" id="assignments">assignments</a></h1> Assignments constitute 25% of the total marks, including group scribing for lecture notes.
+
+                <br />
+                <br />
+
+                <table id="one-column-emphasis">
+                    <colgroup>
+                        <col class="oce-first" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Assignment</th>
+                            <th scope="col">Files</th>
+                            <th scope="col">Posted on</th>
+                            <th scope="col">Clarification</th>
+                            <th scope="col">Submission</th>
+                            <th scope="col">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Assignment 1</td>
+                            <td><a href="assignments/assignment1.pdf">PDF</a> |
+                                <a href="assignments/assignment1.tex">TeX</a></td>
+                            <td>25 Jan 2016</td>
+                            <td>02 Feb 2016</td>
+                            <td>05 Feb 2016</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Assignment 2</td>
+                            <td><a href="assignments/assignment2.pdf">PDF</a> |
+                                <a href="assignments/assignment2.tex">TeX</a></td>
+                            <td>12 Feb 2016</td>
+                            <td>16 Feb 2016</td>
+                            <td>01 Mar 2016</td>
+                            <td>50</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br />
+                <br />
+
+                <h4>Resources for Scribes</h4> It is preferred that the scribes are typeset in LaTeX -- but it is NOT mandatory at all. In case you are not comfortable with LaTeX, or do not want to spend the time to learn it, no worry -- submit the scribes as neatly hand-written documents. In case you want to scribe in LaTeX, use the following resources.
+
+                <br />
+                <br /> LaTeX template for scribes : <a href="resources/scribe_template.zip">scribe_template.zip</a> &nbsp; | &nbsp; Instructions : <a href="resources/scribe_template.pdf">scribe_template.pdf</a>
+                <br /> LaTeX resources and help : <a href="https://en.wikibooks.org/wiki/LaTeX">LaTeX Wikibooks</a> &nbsp; | &nbsp; Basic LaTeX commands : <a href="resources/latex_cheatsheet.pdf">LaTeX cheatsheet</a>
+
+
+                <h1>Tests
+                    <a class="anchor" id="tests">tests</a></h1> The tests constitute 75% of the total marks. There will be two tests -- Mid-Sem and End-Sem -- over the duration of the course, and both the scores will be counted towards the computation of the final grade.
+
+                <br />
+                <br />
+
+                <table id="one-column-emphasis">
+                    <colgroup>
+                        <col class="oce-first" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Test</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Format</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mid-Sem</td>
+                            <td>25%</td>
+                            <td> 22 Feb 2016 </td>
+                            <td> <a href="exams/midsemSample.pdf">Sample Question for Mid-Sem</a>
+                                <br /> <a href="exams/midsemQues.pdf">Mid-Sem Question Paper</a></td>
+                        </tr>
+                        <tr>
+                            <td>End-Sem</td>
+                            <td>50%</td>
+                            <td> 04 May 2016 </td>
+                            <td> <a href="exams/endsemQues.pdf">End-Sem Question Paper</a> </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>&nbsp;</p>
+
+            </div>
+
+            <div id="right-column">
+
+                <h2>Reach Sourav</h2>
+
+                <img src="../images/email.png" alt="EMail" /> &nbsp; sg.[firstname]@gmail.com
+                <br />
+                <img src="../images/phone.png" alt="Phone" /> &nbsp; +91 94323 44852 (email preferred)
+                <br />
+                <img src="../images/office.png" alt="Office" /> &nbsp; Room 404, 3rd Floor, Deshmukh Building
+
+                <h2>Updates</h2>
+
+                <ul class="old">
+                    <li>End-Sem Examination : 04 May 2016.</li>
+                    <li>Class cancelled : 15 April 2016.</li>
+                    <li>Class cancelled : 08 April 2016.</li>
+                    <li>Extra class : 31 March 2016.</li>
+                    <li>Class cancelled : 01 April 2016.</li>
+                    <li>No class (Holiday) : 25 March 2016.</li>
+                    <li>Extra class : 21 March 2016.</li>
+                    <li>Class cancelled : 22 March 2016.</li>
+                    <li>Extra class : 09 March 2016.</li>
+                    <li>Class cancelled : 08 March 2016.</li>
+                    <li>Class cancelled : 01 March 2016.</li>
+                    <li>Extra class : 29 February 2016.</li>
+                    <li>Assignment 2 posted : Due on 01 Mar.</li>
+                    <li>Mid-Sem Examination : 22 Feb 2016.</li>
+                    <li>Class cancelled : 16 February 2016.</li>
+                    <li>Extra class : 15 February 2016.</li>
+                    <li>No class (Holiday) : 12 February 2016.</li>
+                    <li>Extra class : 10 February 2016.</li>
+                    <li>Assignment 1 posted : Due on 5 Feb</li>
+                    <li>Extra class : 3 February 2016.</li>
+                    <li>No class (Holiday) : 26 January 2016.</li>
+                    <li>No class (Integration) : 22 January 2016.</li>
+                    <li>Extra class : 21 January 2016.</li>
+                    <li>Class cancelled : 19 January 2016.</li>
+                    <li>Extra class : 18 January 2016.</li>
+                    <li>No class (Convocation) : 15 January 2016.</li>
+                    <li>Extra class : 14 January 2016.</li>
+                    <li>Class cancelled : 12 January 2016.</li>
+                    <li>Class cancelled : 8 January 2016.</li>
+                    <li>Course website is now online.</li>
+                </ul>
+
+                <h2>References</h2>
+
+                <ul class="pub">
+                    <li>(T1) Elementary Numerical Analysis
+                        <br /> Samuel Conte and Carl de Boor
+                        <br /> McGraw-Hill Education (India)
+                    </li>
+                    <li>(R1) Numerical Algorithms
+                        <br /> Justin Solomon
+                        <br />
+                        <a href="resources/NumAnaBook_Solomon.pdf">Available online at this link</a>
+                    </li>
+                    <li>
+                        (C1) A (very) short introduction to R
+                        <br /> Paul Torfs and Claudia Brauer
+                        <br />
+                        <a href="resources/TorfsBrauer_ShortIntroR.pdf">Available online at this link</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="footer">
+        <div id="footer-content">
+            &copy; Sourav Sen Gupta
+            <br /> Any feedback, comment and criticism about this website is most welcome. Just drop me an email.
+        </div>
+    </div>
+</body>
+
+</html>

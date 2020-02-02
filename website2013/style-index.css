@@ -1,0 +1,94 @@
+body {
+    font: 400 15px/1.6 Lora, Georgia, serif;
+    color: #444;
+    background: url(images/wood.jpg);
+    margin: 0 auto;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+#header {
+    height: 50px;
+    margin: 30px 30px 30px 180px;
+    font: 700 48px Lora, Georgia, serif;
+    text-shadow: 0 2px 3px #fd9;
+    color: #804020;
+}
+
+#content {
+    padding: 30px;
+    margin: 30px 30px 30px 180px;
+    background: url(images/noise.jpg);
+    box-shadow: -2px 5px 10px #666;
+}
+
+.ssection {
+    margin: 24px 0;
+    clear: left;
+    border-bottom: 1px solid #e8e0d8;
+}
+
+.quote {
+    text-align: left;
+    margin: 0 0 24px 0;
+    clear: left;
+    font: 700 16px/1.6 Lora, Georgia, serif;
+}
+
+.pubinfo {
+    color: #804020;
+    font: 400 12px Lora, Georgia, serif;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    width: 180px;
+    text-align: right;
+    margin: -15px 0 0 -230px;
+    text-shadow: 0 2px 3px #fd9;
+    color: #804020;
+    float: left;
+    padding: 10px 20px 4px 0;
+}
+
+a {
+    color: #804020;
+    text-decoration: none;
+    border-bottom: 1px dotted #666;
+}
+
+a:hover {
+    border-bottom-style: solid;
+    color: #000;
+}
+
+ul li {
+    padding: 0 0 10px 0;
+}
+
+table td {
+    text-align: right;
+    vertical-align: top;
+}
+
+.footer {
+    clear: left;
+    font-size: small;
+    color: #666;
+}
+
+.footer a {
+    border: none;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    border: none;
+    text-decoration: none;
+}

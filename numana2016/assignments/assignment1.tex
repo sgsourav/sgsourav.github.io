@@ -1,0 +1,119 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[vmargin=1.5in, hmargin=1in]{geometry}
+
+\usepackage{amsmath,amsfonts,amsthm}
+
+\usepackage[T1]{fontenc}
+\usepackage{enumerate}
+
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textsf{BStat--I, ISI Kolkata}}
+\lhead{\textsf{Numerical Analysis}}
+\rfoot{\textsf{Page \thepage}}
+
+\newcommand{\R}{\textsf{R}}
+
+\begin{document}
+
+\begin{center}
+  
+  \textbf{\Huge Assignment 1}
+
+  \vspace*{10pt}  
+
+  \textbf{Posted on 25 Jan 2016 $ \ \vert \ $ Clarify doubts by 2 Feb 2016 $ \ \vert \ $ Submit by 5 Feb 2016}
+
+  \vspace*{10pt}  
+
+  This is a \emph{Group Assignment} -- each group (two students) should submit a single set of solutions. 
+
+  \vspace*{10pt}  
+  
+  The solutions may be submitted either as a clearly legible hand-written document, or as a single \LaTeX\ generated PDF document. In case of PDF submission, the filename should be \texttt{assign1\_groupXX.pdf}, where \texttt{XX} is the serial number of the group. Be cogent, but concise.
+    
+  \vspace*{10pt}  
+
+  \textbf{Attempt all problems. This assignment is worth 150 points in total.}
+
+  \vspace*{20pt}
+
+  \hrule
+
+  \vspace*{10pt}
+   
+\end{center}
+
+
+{\large\textbf{Problem 1}} (CS205A 2013, Stanford) \hfill [5 + 5 + 20 + 10 = 40]
+
+\begin{enumerate}[A.]
+\item For estimating numerical errors in the process of evaluating $x \times y$ in floating-point arithmetic, which of the following models would you choose to represent the error? Justify your answer.
+\begin{itemize}
+\item \textsf{Model 1} : We will assume that evaluating $x \times y$ on the computer outputs $(1 + \epsilon)(x \times y)$ for some number $\epsilon$ satisfying $0 \leq |\epsilon| < \epsilon_{max} \ll 1$, where $\epsilon$ may depend upon $x, y$.
+\item \textsf{Model 2} : We will assume that evaluating $x \times y$ on the computer outputs $(x \times y) + \epsilon$ for some number $\epsilon$ satisfying $0 \leq |\epsilon| < \epsilon_{max} \ll 1$, where $\epsilon$ may depend upon $x, y$.
+\end{itemize}
+
+\item Suppose that $\epsilon_1, \epsilon_2, \ldots, \epsilon_k$ satisfy $0 \leq |\epsilon_i| < \epsilon_{max} \ll 1$ for all $i = 1, 2, \ldots, k$. Prove that there exists some $\epsilon$ satisfying $0 \leq |\epsilon| < \epsilon_{max} \ll 1$ such that $(1 + \epsilon_1)(1 + \epsilon_2) \cdots (1 + \epsilon_k) = (1 + \epsilon)^k$.
+
+\item Suppose we want to compute $x \times y$. Assume that the process introduces a numerical error $\epsilon$ satisfying $0 \leq |\epsilon| < \epsilon_{max} \ll 1$, as per the model you chose earlier. Moreover, in reality, we do not know the inputs $x, y$ accurately -- we just know them relative to the numerical precision. Thus, let us denote the inputs by $(1 + \epsilon_x) \ x$ and $(1 + \epsilon_y) \ y$, where $0 \leq |\epsilon_x|, |\epsilon_y| < \epsilon_{max} \ll 1$. Compute the bounds for error while evaluating $x \times y$, in terms of $\epsilon_{max}$.
+
+\item In a similar fashion, compute the bounds for error while evaluating $(x - y)$, in terms of $\epsilon_{max}$.
+\end{enumerate}
+
+
+{\large\textbf{Problem 2}} (CS205A 2013, Stanford) \hfill [20 + 20 = 40]
+
+\begin{enumerate}[A.]
+\item Suppose we want to evaluate $nx$ (where $n \ll 1/\epsilon_{max}$) using the recurrence
+\begin{align*}
+S_1 &= x \\
+S_n &= S_{n-1} + x
+\end{align*}
+Compute a bound for the relative error in this computation, in terms of $n$ and $\epsilon_{max}$. 
+
+\item Is there a way to evaluate $nx$ with the bound on the relative error \emph{not} linearly dependent on $n$? Describe such a method, if it exists, and compute the bound for the relative error.
+\end{enumerate}
+
+
+{\large\textbf{Problem 3}} \hfill [(4 $\times$ 5) + 20 = 40]
+
+\begin{enumerate}[A.]
+\item Solve the following system of linear equations for $x_1, x_2, x_3, x_4$, using each of the methods prescribed below. In each case, count (precisely) the number of individual operations (additions, subtractions, multiplications and divisions) required to solve the system.
+\begin{align*}
+2 x_1 + x_2 + x_3 &= 4 \\
+4 x_1 + 3 x_2 + 3 x_3 + x_4 &= -3 \\
+8 x_1 + 7 x_2 + 9 x_3 + 5 x_4 &= 3 \\
+6 x_1 + 7 x_2 + 9 x_3 + 8 x_4 &= 2
+\end{align*}
+\begin{enumerate}[(i)]
+\item Using simple Gaussian elimination with \emph{nonzero} pivoting.
+\item Using simple Gaussian elimination with \emph{partial} pivoting.
+\item Using PLU factorization technique, with \emph{nonzero} pivoting.
+\item Using PLU factorization technique, with \emph{partial} pivoting.
+\end{enumerate}
+
+\item Estimate the number of operations required to solve a system of $n$ linear equations with $n$ unknowns, for each of the above methods. The estimates should be functions of $n$.
+\end{enumerate}
+
+{\large\textbf{Problem 4}} \hfill [10 + 10 + 10 = 30]
+
+\begin{enumerate}[A.]
+\item Solve the following system of linear equations for $x_1, x_2, x_3, x_4$, using any suitable computational method of your choice. You may use any result you have derived thus far.
+\begin{align*}
+2 x_1 + x_2 + x_3 &= 4 + i \\
+8 x_1 + 7 x_2 + 9 x_3 + 5 x_4 &= 3 + 2 i \\
+8 x_1 + 6 x_2 + 6 x_3 + 2 x_4 &= -6 \\
+6 x_1 + 7 x_2 + 9 x_3 + 8 x_4 &= 2 - 3 i
+\end{align*}
+\item Propose an algorithm to solve a system of complex linear equations $\mathbf{A} (\vec{x} + i \vec{y}) = (\vec{u} + i \vec{v})$? Estimate the number of operations as a function of $n$, where $\mathbf{A}$ is $n \times n$.
+\item Propose an algorithm to solve a system of complex linear equations $(\mathbf{A} + i \mathbf{B}) (\vec{x} + i \vec{y}) = (\vec{u} + i \vec{v})$? Estimate the number of operations as a function of $n$, where $\mathbf{A}, \mathbf{B}$ are $n \times n$.
+\end{enumerate}
+
+
+
+\end{document}
