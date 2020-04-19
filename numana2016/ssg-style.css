@@ -1,0 +1,417 @@
+/*-----------------------------------------------*/
+
+
+/* CSS stylesheet for Sourav Sen Gupta's website */
+
+
+/*-----------------------------------------------*/
+
+
+/*
+    BodyBG                 :    #FFFFFF
+    BodyText / MenuText    :    #331919
+    HeaderBG / FooterBG :    #591E23
+    HeaderText / MenuBG    :    #F2F2F3
+    LinkColor /    h1Color    :    #7D1935
+    PubInfo Text        :    #766151
+*/
+
+body {
+    margin: 0;
+    font: 14px/1.6 Roboto, Georgia, serif;
+    color: #331919;
+    background: #FFFFFF;
+}
+
+
+/*-----------------------------------------------*/
+
+#header {
+    clear: both;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #591E23;
+}
+
+#header-content {
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    width: 1000px;
+}
+
+#main-heading {
+    float: left;
+    height: 100px;
+    padding: 0 20px 0 0;
+    font: 300 64px Oswald, Georgia, serif;
+    color: #F2F2F3;
+}
+
+#sub-heading {
+    float: left;
+    height: 100px;
+    padding: 15px 0 0 10px;
+    border-left: 2px solid #F2F2F3;
+    font: 300 28px/1.2 Oswald, Georgia, serif;
+    color: #F2F2F3;
+}
+
+#header-logo {
+    float: right;
+    height: 100px;
+    width: 100px;
+    background: url(images/isi_logo.png) no-repeat right center;
+    background-size: 70px;
+}
+
+
+/*-----------------------------------------------*/
+
+#menu {
+    clear: both;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    background: #F2F2F3;
+}
+
+#menu-content {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px 10px 0 10px;
+}
+
+#left-menu {
+    float: left;
+    font: 18px/1.6 Roboto, Georgia, serif;
+}
+
+#left-menu ul {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#left-menu ul li {
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+#left-menu ul li a {
+    display: block;
+    text-decoration: none;
+    border: none;
+    color: #331919;
+}
+
+#left-menu ul li a:hover {
+    color: #331919;
+    border-bottom: 2px solid #7D1935;
+}
+
+#right-menu {
+    float: right;
+    font: 14px/1.6 Roboto, Georgia, serif;
+}
+
+#right-menu ul {
+    float: right;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#right-menu ul li {
+    float: left;
+    margin: 6px 0 0 30px;
+}
+
+#right-menu ul li a {
+    display: block;
+    text-decoration: none;
+    border: none;
+    color: #331919;
+}
+
+#right-menu ul li a:hover {
+    color: #331919;
+    border-bottom: 2px solid #7D1935;
+}
+
+#menugap {
+    clear: both;
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    top: 140px;
+    background: #FFFFFF;
+}
+
+
+/*-----------------------------------------------*/
+
+#container {
+    clear: both;
+    margin: 120px auto 0 auto;
+}
+
+#main-photo-frame {
+    clear: both;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#content {
+    clear: both;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+}
+
+
+/*-----------------------------------------------*/
+
+#footer {
+    clear: both;
+    margin: 20px auto 0 auto;
+    width: 100%;
+    min-height: 50px;
+    background: #591E23;
+    color: #F2F2F3;
+}
+
+#footer-content {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+}
+
+
+/*-----------------------------------------------*/
+
+#left-column {
+    float: left;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#mid-column {
+    float: left;
+    width: 300px;
+    margin: 0 0 0 50px;
+    padding: 0;
+}
+
+#right-column {
+    float: left;
+    width: 300px;
+    margin: 0 0 0 50px;
+    padding: 0;
+}
+
+#left-mid-column {
+    float: left;
+    width: 650px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-----------------------------------------------*/
+
+.pubinfo {
+    font: 12px/1.6 Roboto, Georgia, serif;
+    color: #766151;
+}
+
+img.right-photo-frame {
+    width: 300px;
+    clip: rect(0px, 60px, 200px, 0px);
+}
+
+.clear {
+    clear: both;
+}
+
+.drawer {
+    clear: both;
+    padding: 10px;
+    background: #F2F2F3;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+
+/*-----------------------------------------------*/
+
+ul {
+    padding: 0px 0 5px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pos li {
+    padding-left: 25px;
+    background: url(images/office.png) no-repeat;
+    background-position: left center;
+}
+
+.deg li {
+    padding-left: 25px;
+    background: url(images/degree.png) no-repeat;
+    background-position: left center;
+}
+
+.lin li {
+    padding-left: 25px;
+    background: url(images/link.jpg) no-repeat;
+    background-position: left center;
+}
+
+.pub li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    background: url(images/paper.png) no-repeat;
+    background-position: left top;
+}
+
+.syn li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    background: url(images/synergy.png) no-repeat;
+    background-position: left top;
+}
+
+.mem li {
+    padding-left: 25px;
+    background: url(images/member.png) no-repeat;
+    background-position: left center;
+}
+
+.new li {
+    padding-left: 25px;
+    background: url(images/new.png) no-repeat;
+    background-position: left center;
+}
+
+.old li {
+    padding-left: 25px;
+    background: url(images/old.png) no-repeat;
+    background-position: left center;
+}
+
+.syl li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    background: url(images/syllabus.png) no-repeat;
+    background-position: left center;
+}
+
+.cou li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    background: url(images/course.png) no-repeat;
+    background-position: left center;
+}
+
+
+/*-----------------------------------------------*/
+
+a {
+    color: #7D1935;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7D1935;
+    text-decoration: none;
+    border-bottom: 1px solid #7D1935;
+}
+
+a:visited {
+    color: #7D1935;
+    text-decoration: none;
+}
+
+a.anchor {
+    position: relative;
+    top: -170px;
+    visibility: hidden;
+}
+
+a.download {
+    background: url(images/download.png) no-repeat left top;
+    margin-right: 5px;
+    padding-left: 16px;
+    font: 12px/1.6 Raleway, Georgia, serif;
+    text-decoration: none;
+}
+
+a.download:hover {
+    border: 0;
+}
+
+
+/*-----------------------------------------------*/
+
+h1 {
+    margin-top: 50px;
+    color: #7D1935;
+}
+
+h2 {
+    margin-top: 50px;
+    color: #591E23;
+}
+
+h4 {
+    font: 16px/1.6 Roboto, Georgia, serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #591E23;
+    padding-left: 20px;
+    border-left: 5px solid #7D1935;
+}
+
+hr.divider {
+    border: 0;
+    border-bottom: 1px dashed #7D1935;
+    background: #F2F2F3;
+}
+
+
+/*-----------------------------------------------*/
+
+#one-column-emphasis {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#one-column-emphasis th {
+    font: 16px/1.6 Roboto, Georgia, serif;
+    padding: 12px 15px;
+    color: #7D1935;
+}
+
+#one-column-emphasis td {
+    padding: 10px 15px;
+    border-top: 1px solid #EEEEEE;
+}
+
+.oce-first {
+    background: #F2F2F3;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+
+/*-----------------------------------------------*/
